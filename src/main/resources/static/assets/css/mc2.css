@@ -8,7 +8,7 @@ https://templatemo.com/tm-557-grad-school
 
 
 @import url(fontawesome.css);
-@import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
+@import url('<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">');
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -497,6 +497,7 @@ section.why-us {
     padding-bottom: 100px;
 }
 
+/** Tabs 1 **/
 #tabs {
   text-align: center;
 }
@@ -589,6 +590,102 @@ section.why-us {
     font-size: 15px;
     line-height: 28px;
 }
+
+/** Tabs 2 **/
+#tabs2 {
+  text-align: center;
+}
+#tabs2 ul {
+  margin: 0;
+  padding: 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+}
+#tabs2 ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#tabs2 ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#tabs2 ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+#tabs2 ul li a:after {
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+#tabs2 ul li a:before {
+    transition: all 0.3s;
+    width: 25px;
+    height: 25px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+}
+#tabs2 ul li span {
+  display: block;
+  margin-bottom: 0.75em;
+}
+#tabs2 ul .ui-tabs-active {
+}
+#tabs2 ul .ui-tabs-active a {
+  color: #f5a425;
+}
+#tabs2 ul .ui-tabs-active a:after {
+  background-color: #f5a425;
+  width: 15px;
+  height: 15px;
+}
+#tabs2 ul .ui-tabs-active a:before {
+  border-color: #f5a425;
+}
+#tabs2 h4 {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#tabs2 p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/** end of tabs **/
 
 .tabs-content {
     margin-top: 60px;
