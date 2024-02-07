@@ -19,6 +19,7 @@
 	    loop:true,
 	    margin:30,
 	    nav:true,
+	    items: 14,
 	    autoplay:true,
 		autoplayTimeout:5000,
 		autoplayHoverPause:true,
