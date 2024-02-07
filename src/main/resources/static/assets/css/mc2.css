@@ -718,7 +718,8 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-    background-image: url(../images/coming-soon-bg.jpg);
+    /*background-image: url(../images/coming-soon-bg.jpg);*/
+    background-image: url(../images/imageedit_10_7275174318.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -982,7 +983,8 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-    background-image: url(../images/video-bg.jpg);
+    /*background-image: url(../images/video-bg.jpg);*/
+    background-image: url(../images/mask.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;

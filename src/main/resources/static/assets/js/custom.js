@@ -70,6 +70,16 @@
 
 
 	$( "#tabs" ).tabs();
+	
+	function change_h(){
+		  if ($("section.coming-soon").width() > 1000 ) {
+			  //console.log($("section.coming-soon").width());
+			  var h = Math.round(667 * ( $("section.coming-soon").width() / 1000));
+			  var str = h + "px";
+			  //console.log(str);
+			  $('section.coming-soon').css("height", str);
+		  }
+	  }	
 
 
 	(function init() {
@@ -88,19 +98,13 @@
 	    };
 	  }
 	  
-	  function initializeClock(endtime){
-	  var timeinterval = setInterval(function(){
-	    var t = getTimeRemaining(endtime);
-	    document.querySelector(".days > .value").innerText=t.days;
-	    document.querySelector(".hours > .value").innerText=t.hours;
-	    document.querySelector(".minutes > .value").innerText=t.minutes;
-	    document.querySelector(".seconds > .value").innerText=t.seconds;
-	    if(t.total<=0){
-	      clearInterval(timeinterval);
-	    }
-	  },1000);
-	}
-	initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+	  
+	
+	change_h()
 	})()
+	
+	$( window ).on( "resize", function() {
+  		change_h();
+	} );
 
 })(jQuery);
